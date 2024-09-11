@@ -1,0 +1,153 @@
+html {
+    margin: 0px;
+}
+
+body {
+    background-color:white;
+    font-family: "PT Sans", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
+    font-size: 1.25vw;
+}
+
+#logo {
+    margin: 0px;
+    padding: 8px;
+    font-family:"Nanum Myeongjo" ;
+    text-shadow: 
+     -1px -1px 0 darkgrey,   /* Top left shadow */
+        1px -1px 0 darkgrey,    /* Top right shadow */
+        -1px 1px 0 darkgrey,    /* Bottom left shadow */
+        1px 1px 0 darkgray;     /* Bottom right shadow */
+}
+
+ul {
+    margin: 0px;
+}
+
+body > header {
+    background-color:aliceblue;
+    color:darkslategrey;
+    display: flex;
+    height: 12vh;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: header;
+}
+
+body > header > nav > ul {
+    list-style: none;
+    text-decoration: none; 
+}
+
+#title {
+    margin: 0px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-ul {
+display: flex;
+}
+
+#nav-ul > li {
+    margin: 25px;
+}
+
+.navbutton {
+    color: darkslategrey;
+    text-decoration: none;
+    padding: 15px; 
+    border: 1px solid darkslategrey;
+    border-radius: 10%;
+}
+
+body > main article {
+    width: 70%;
+    margin: auto;
+}
+
+#main {
+    grid-area: main;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-content > div {
+    width: 80%;
+}
+
+#menu {
+    grid-area: menu;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    background-color:aliceblue;
+}
+
+form {
+    text-align: center;
+}
+
+#newsletter {
+    text-align: center;
+}
+
+#authorimg {
+    border-radius: 15%;
+}
+
+body > footer {
+    background-color:aliceblue;
+    display: flex;
+    grid-area: footer;
+}
+
+#footerlogo {
+    margin: 0px;
+    padding: 8px;
+    font-family:"Nanum Myeongjo" ;
+    text-shadow: 
+     -1px -1px 0 darkgrey,   /* Top left shadow */
+        1px -1px 0 darkgrey,    /* Top right shadow */
+        -1px 1px 0 darkgrey,    /* Bottom left shadow */
+        1px 1px 0 darkgray;     /* Bottom right shadow */
+}
+
+#linkedin {
+    margin-left: 15px;
+    padding: 8px;
+    list-style: none;
+    text-decoration: none;
+    font-size:80% ;
+    color:dodgerblue;
+}
+
+#footer-ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    height: 12vh;
+}
+
+#footer-ul > div > li {
+    margin-left: 15px;
+}
+
+.footernavbutton {
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main"
+    "footer footer"
+    ;
+    grid-template-columns: 1fr 6fr;
+}
